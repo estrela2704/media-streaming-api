@@ -27,7 +27,6 @@ git clone https://github.com/estrela2704/media-streaming-api.git
 Após a inicialização, a documentação Swagger da aplicação estará disponível na seguinte URL:
 - http://localhost:8080/swagger-ui.html
 
-### Documentação Inicial
 Caso tenha interesse, a documentação inicial do projeto está disponível em:
 - https://www.notion.so/API-de-Streaming-de-Arquivos-1cba17f3d47e8054a093f38f51164935
 
