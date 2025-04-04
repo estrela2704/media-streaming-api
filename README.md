@@ -17,7 +17,7 @@ API para upload, autenticação e streaming de arquivos de mídia (foco em víde
 ## Instalação
 1. Certifique-se de que o Docker está em execução na sua máquina.
 2. Clone este repositório em sua máquina local:
-git clone https://github.com/seu-usuario/media-streaming-api.git
+git clone https://github.com/estrela2704/media-streaming-api.git
 3. Navegue até o diretório onde o repositório foi clonado:
    cd media-streaming-ap
 4. No terminal, execute o comando Docker Compose para iniciar a aplicação:
