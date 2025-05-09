@@ -1,5 +1,6 @@
 package br.com.media_streaming_api.application.services;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.ResourceRegion;
 import org.springframework.stereotype.Service;
@@ -9,11 +10,8 @@ import br.com.media_streaming_api.domain.ports.FileStorageGateway;
 @Service
 public class FileStreamService {
 
-    private final FileStorageGateway gateway;
-
-    public FileStreamService(FileStorageGateway gateway) {
-        this.gateway = gateway;
-    }
+	@Autowired
+    FileStorageGateway gateway;
 
     public ResourceRegion getResourceRegion(String filename, long start, long end) {
         Resource video = this.gateway.getFileAsResource(filename);

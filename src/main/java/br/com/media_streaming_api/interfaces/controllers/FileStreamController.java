@@ -1,7 +1,6 @@
 package br.com.media_streaming_api.interfaces.controllers;
 
-import javax.print.attribute.standard.Media;
-
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.support.ResourceRegion;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpRange;
@@ -21,11 +20,8 @@ import br.com.media_streaming_api.application.services.FileStreamService;
 @RequestMapping("/file")
 public class FileStreamController {
 
-    private final FileStreamService service;
-
-    public FileStreamController(FileStreamService service) {
-        this.service = service;
-    }
+	@Autowired
+    FileStreamService service;
 
     @GetMapping("/{filename}")
     public ResponseEntity<ResourceRegion> stream(
