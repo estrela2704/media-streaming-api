@@ -17,10 +17,10 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.media_streaming_api.application.services.FileStreamService;
 
 @RestController
-@RequestMapping("/file")
+@RequestMapping("/api/v1/file")
 public class FileStreamController {
 
-	@Autowired
+    @Autowired
     FileStreamService service;
 
     @GetMapping("/{filename}")
